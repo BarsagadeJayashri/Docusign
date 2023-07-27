@@ -1,39 +1,37 @@
 # DocuSign-Integration-with-Salesforce
 
-This repository contains a comprehensive solution for integrating Salesforce with SAP, facilitating the seamless retrieval of SAP Leads into Salesforce on a daily basis.
+This repository offers a comprehensive solution for seamlessly integrating Salesforce with DocuSign, empowering Salesforce users to complete the Non-Disclosure Agreement (NDA) process entirely within Salesforce.
 
 ## Pre-requisites:
 
-Before using this solution, ensure that you have the following pre-requisites in place:
+Before implementing this solution, ensure that the following pre-requisites are fulfilled:
 
-1. API Key from SAP: Obtain an API Key from SAP to enable authorization between Salesforce and SAP.
+Create an App in DocuSign: Set up an App in DocuSign to facilitate the integration and enable smooth data exchange between Salesforce and DocuSign.
 
-2. Salesforce Account: Have access to a Salesforce account with privileges to access the Lead object.
+Create Webhook in Salesforce: Establish a webhook in Salesforce to enable seamless communication and data synchronization with DocuSign.
 
-3. SAP Account: Ensure that your SAP account has API access enabled.
+Salesforce Account: Have access to a Salesforce account with necessary privileges to access the Lead object.
+
+DocuSign Account: Ensure that your DocuSign account has API access enabled.
 
 ## Installation:
 
-Follow these steps to set up the integration:
+To set up the integration, follow these steps:
 
-1. Connect SAP with Salesforce using the provided API Key (create a SAP Account).
+Connect DocuSign with Salesforce by creating a webhook and setting up the App (create a Quickbook Account in DocuSign).
 
-2. Create a custom object in Salesforce to store SAP external Id.
+Create custom objects named "DocuObj" and "DocuSign" in Salesforce to effectively manage and store DocuSign-related data.
 
-3. Import and deploy the provided Apex class into your Salesforce environment.
+Import and deploy the provided Apex classes and triggers into your Salesforce environment.
 
 ## Features:
 
 This integration solution is designed to offer the following key features:
 
-Seamless Data Retrieval: The solution allows effortless retrieval of lead records from SAP, ensuring a smooth flow of data.
+NDA Template Creation: Users can create NDA templates directly within Salesforce by simply clicking a button. The templates can be customized as needed.
 
-Automated Updates: Daily updates to lead records are automatically performed, ensuring the availability of the most current data in Salesforce.
+Efficient Signature Process: The solution enables a streamlined NDA signature process, ensuring a smooth exchange of documents between receiving and disclosing parties. Once both parties have signed the NDA, the document is automatically retrieved and stored within Salesforce.
 
-By implementing this solution, you can streamline the integration process between Salesforce and SAP, enhancing data accuracy and operational efficiency within your organization.
+By implementing this solution, your organization can optimize the NDA process, allowing Salesforce users to efficiently handle NDAs within the Salesforce platform.
 
-For detailed usage instructions and further information, refer to the documentation provided in the repository.
-
-## Contribution:
-
-We welcome contributions to enhance the functionality and usability of this integration solution. If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+For detailed usage instructions and additional information, please refer to the documentation provided in the repository.
